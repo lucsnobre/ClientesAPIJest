@@ -119,7 +119,7 @@ class Cliente {
         try {
             const query = `
                 UPDATE clientes 
-                SET nome = ?, email = ?, telefone = ?, updated_at = CURRENT_TIMESTAMP
+                SET nome = ?, email = ?, telefone = ?, atualizado_em = CURRENT_TIMESTAMP, criado_em = CURRENT_TIMESTAMP
                 WHERE id = ?
             `;
             
